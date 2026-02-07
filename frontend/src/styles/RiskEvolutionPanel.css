@@ -1,0 +1,73 @@
+/* RiskEvolutionPanel.css */
+
+.risk-evolution-panel {
+  grid-column: span 2;
+}
+
+@media (max-width: 1400px) {
+  .risk-evolution-panel {
+    grid-column: span 1;
+  }
+}
+
+.risk-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.metric {
+  flex: 1;
+  background: rgba(0, 255, 159, 0.1);
+  border: 1px solid rgba(0, 255, 159, 0.3);
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.metric:hover {
+  background: rgba(0, 255, 159, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.4);
+}
+
+.metric-label {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.metric-value {
+  display: block;
+  color: #00ff9f;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+}
+
+.metric-value.trend {
+  color: #ffaa00;
+  text-transform: uppercase;
+}
+
+.chart-info {
+  color: #888;
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Chart Styling */
+.recharts-default-tooltip {
+  background: rgba(26, 14, 46, 0.95) !important;
+  border: 1px solid #00ff9f !important;
+  border-radius: 4px !important;
+}
+
+.recharts-tooltip-label {
+  color: #00ff9f;
+}

@@ -1,0 +1,112 @@
+/* ForecastingPanel.css */
+
+.forecasting-panel {
+  grid-column: span 1;
+}
+
+.forecast-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.forecast-controls label {
+  color: #888;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.forecast-controls select {
+  background: rgba(0, 255, 159, 0.1);
+  border: 1px solid #00ff9f;
+  color: #00ff9f;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forecast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 255, 159, 0.2);
+}
+
+.confidence {
+  color: #888;
+  font-size: 13px;
+}
+
+.confidence strong {
+  color: #00ff9f;
+}
+
+.hotspots-section {
+  margin-top: 25px;
+}
+
+.hotspots-section h3 {
+  color: #ff00ff;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hotspots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.hotspot-card {
+  background: rgba(255, 0, 255, 0.05);
+  border-radius: 6px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.hotspot-card:hover {
+  background: rgba(255, 0, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.hotspot-title {
+  color: #00ff9f;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.hotspot-detail {
+  color: #e0e0e0;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.hotspot-intensity {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hotspot-intensity span {
+  color: #888;
+  font-size: 11px;
+}
+
+.intensity-bar {
+  height: 6px;
+  background: rgba(0, 255, 159, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.intensity-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
